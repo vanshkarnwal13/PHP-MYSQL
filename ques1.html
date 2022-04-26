@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fruit Survey</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h2 style="text-align: centre; background-color: #d6d3d3">
+        The World of Fruit
+      </h2>
+    </div>
+
+    <form action="ques1.php" method="post">
+      <table>
+        <tr>
+          <td>
+            <label for="inputName">Name:</label>
+          </td>
+          <td>
+            <input type="text" name="name" id="inputName" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="address">Address:</label>
+          </td>
+          <td><input type="text" name="address" id="address" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email:</label>
+          </td>
+          <td><input type="text" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fruit"
+              >How many pieces of fruits do you eat per day ?</label
+            >
+          </td>
+          <td>
+            <input type="radio" name="0" id="0" /> 0
+            <input type="radio" name="1" id="1" /> 1
+            <input type="radio" name="2" id="2" /> 2
+            <input type="radio" name="m2" id="2m" /> More than 2
+          </td>
+        </tr>
+        <tr>
+          <td>My favorite fruit :</td>
+          <td>
+            <select name="fav" id="fav" multiple>
+              <option value="mango">Mango</option>
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="pineapple">Pineapple</option>
+              <option value="plum">Plum</option>
+              <option value="pomogrenate">Pomogrenate</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
